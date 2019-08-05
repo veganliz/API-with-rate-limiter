@@ -19,7 +19,7 @@ gem 'puma', '~> 3.11'
 gem 'rack-attack'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'httparty'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
