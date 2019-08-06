@@ -6,11 +6,12 @@ Simple API that throttles requests over 100 per 10 seconds
 ## Problem to solve
 
 Customers hitting our rate limits don't always handle the 429 reponse in the best way possible. 
+Here is an API which implements the same rate limits that we impose and against which the exponential backoff algorithm can be tested. 
 
-Clone this repo to your machine
-Install dependencies with bundle install.
+1. Clone this repo to your machine
+2. Install dependencies with bundle install.
 
-* System dependencies
+3. System dependencies
 
 * Configuration
 
