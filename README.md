@@ -1,5 +1,5 @@
-# README
-API that throttles requests over 100 per 10 seconds
+
+Simple API that throttles requests over 100 per 10 seconds
 
 Problem to solve
 
