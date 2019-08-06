@@ -1,11 +1,12 @@
 # README
+API that throttles requests over 100 per 10 seconds
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Problem to solve
 
-Things you may want to cover:
+Customers hitting our rate limits don't always handle the 429 reponse in the best way possible. 
 
-* Ruby version
+Clone this repo to your machine
+Install dependencies with bundle install.
 
 * System dependencies
 
