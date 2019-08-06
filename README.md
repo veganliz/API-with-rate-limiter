@@ -2,7 +2,7 @@
 # API-with-rate-limiter 
 
 Simple API that throttles requests over 100 per 10 seconds.
-Includes script that uses exponential backoff when making requests to the API
+Includes scripts that uses exponential backoff when making requests to the API
 
 ## Problem to solve
 
