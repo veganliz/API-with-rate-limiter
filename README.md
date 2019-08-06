@@ -15,5 +15,5 @@ Here is an API which implements the same rate limits that we impose and against 
 3. Update config/database.yml to use the adapter of choice
 4. If you are not using sqlite, you may need to create the database using 'rake db:create'
 5. Migrate the database using 'rake db:migrate'
-6. Run 'rails s' 
-
+6. Run 'rails s' and navigate to localhost:3000/api/v1/articles to see list of articles returned
+7. Once the server is up and running run the following script
