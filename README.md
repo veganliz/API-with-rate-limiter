@@ -11,10 +11,9 @@ Here is an API which implements the same rate limits that we impose and against 
 ## Steps to install
 
 1. Clone this repo to your machine
-2. Install dependencies with bundle install.
+2. Install dependencies with 'bundle install'.
 3. Update config/database.yml to use the adapter of choice
-4. If you are not using sqlite, you may need to create the database using rake db:create
-5. Migrate the database using rake db:migrate
-4. System dependencies
-
+4. If you are not using sqlite, you may need to create the database using 'rake db:create'
+5. Migrate the database using 'rake db:migrate'
+6. Run 'rails s' 
 
