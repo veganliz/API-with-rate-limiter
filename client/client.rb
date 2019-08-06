@@ -33,6 +33,7 @@ class ExponentialBackOff
    end
 end
 
+# Print number of seconds to console
 def print_seconds(number_of_seconds)
   i = 0
   while i <= number_of_seconds

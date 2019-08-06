@@ -15,14 +15,13 @@ class ExponentialBackOff
       puts response.code
       puts response
 
-
 	# If not rate limited, break out of while loop and continue with the rest of the code
 	     if response.code != 429
          puts 'success'
 		   break
 
 	# If rate limited, wait and try again
-      else puts "You've hit our rate limit. Please wait"
+else puts "You've hit our rate limit. Please wait"
         max_sleep_seconds = Float(2 ** retries)
         sleep rand(0..max_sleep_seconds)
          number = sleep rand(0..max_sleep_seconds)
