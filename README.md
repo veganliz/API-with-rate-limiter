@@ -1,24 +1,19 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# API-with-rate-limiter
 
-Things you may want to cover:
+Simple API that throttles requests over 100 per 10 seconds
 
-* Ruby version
+## Problem to solve
 
-* System dependencies
+Customers hitting our rate limits don't always handle the 429 reponse in the best way possible. 
+Here is an API which implements the same rate limits that we impose and against which the exponential backoff algorithm can be tested. 
 
-* Configuration
+## Steps to install
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone this repo to your machine
+2. Install dependencies with 'bundle install'.
+3. Update config/database.yml to use the adapter of choice
+4. If you are not using sqlite, you may need to create the database using 'rake db:create'
+5. Migrate the database using 'rake db:migrate'
+6. Run 'rails s' and navigate to localhost:3000/api/v1/articles to see list of articles returned
+7. Once the server is up and running run the following script
