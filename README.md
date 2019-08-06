@@ -17,5 +17,5 @@ Here is an API which implements the same rate limits that we impose and against 
 4. If you are not using sqlite, you may need to create the database using 'rake db:create'
 5. Migrate the database using 'rake db:migrate'
 6. Run 'rails s' and navigate to localhost:3000/api/v1/articles to see list of articles returned
-7. Once the server is up and running run client/expo_client.rb
-8. Observe exponential backoff in action
+7. Once the server is up and running run client/client_random.rb to see exponential backoff in action.
+
