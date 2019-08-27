@@ -21,13 +21,16 @@ class ExponentialBackOff
 		   break
 
 	# If rate limited, wait and try again
-       else puts "You've hit our rate limit. Please wait"
-	       sleep 2 ** retries
-         number = 2 ** retries
+else puts "You've hit the rate limit. We will try again soon."
+        number = 2 ** retries
+        puts "Seconds before retry:  " + number.to_s
+         # Thread.new {
+
   # Print total number of seconds wait before code will retry
-         puts "Seconds before retry:  " + number.to_s
+
   # Print seconds to the console as the time passes
          print_seconds(number)
+       #}
          retries = retries + 1
        end
      end
@@ -36,11 +39,11 @@ end
 
 # Print number of seconds to console
 def print_seconds(number_of_seconds)
-  i = 0
-  while i <= number_of_seconds
+  i = number_of_seconds
+  while i > 0
     puts i
     sleep 1
-    i = i + 1
+    i = i - 1
   end
 end
 
